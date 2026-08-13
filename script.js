@@ -1,6 +1,5 @@
 const sections = [...document.querySelectorAll("main section[id]")];
 const links = [...document.querySelectorAll(".site-nav a")];
-const skipLink = document.querySelector(".skip-link");
 
 const setActiveLink = () => {
   let current = sections[0];
@@ -20,9 +19,3 @@ const setActiveLink = () => {
 
 setActiveLink();
 document.addEventListener("scroll", setActiveLink, { passive: true });
-
-skipLink?.addEventListener("click", (event) => {
-  event.preventDefault();
-  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  skipLink.blur();
-});

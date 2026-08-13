@@ -49,24 +49,6 @@ a:hover {
   padding: 56px 0 40px;
 }
 
-.skip-link {
-  position: fixed;
-  top: 16px;
-  left: 16px;
-  z-index: 20;
-  transform: translateY(-120px);
-  background: var(--ink);
-  color: white;
-  padding: 10px 14px;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: transform 160ms ease;
-}
-
-.skip-link:focus-visible {
-  transform: translateY(0);
-}
-
 .sidebar {
   position: sticky;
   top: 32px;
