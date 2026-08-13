@@ -50,14 +50,21 @@ a:hover {
 }
 
 .skip-link {
-  position: absolute;
-  transform: translateY(-160%);
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 20;
+  transform: translateY(-80px);
   background: var(--ink);
   color: white;
-  padding: 8px 12px;
+  padding: 10px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: transform 160ms ease;
 }
 
-.skip-link:focus {
+.skip-link:focus,
+.skip-link:focus-visible {
   transform: translateY(0);
 }
 
