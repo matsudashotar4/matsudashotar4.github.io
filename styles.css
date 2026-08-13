@@ -54,7 +54,7 @@ a:hover {
   top: 16px;
   left: 16px;
   z-index: 20;
-  transform: translateY(-80px);
+  transform: translateY(-120px);
   background: var(--ink);
   color: white;
   padding: 10px 14px;
@@ -63,7 +63,6 @@ a:hover {
   transition: transform 160ms ease;
 }
 
-.skip-link:focus,
 .skip-link:focus-visible {
   transform: translateY(0);
 }
