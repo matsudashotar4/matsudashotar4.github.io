@@ -11,3 +11,13 @@
 ## ローカル確認
 
 依存関係はありません。`index.html` をブラウザで直接開くか、任意の静的サーバーで配信してください。
+
+## 編集する場所
+
+- 名前、所属、自己紹介: `index.html` の sidebar と `#profile`
+- 更新情報: `index.html` の `#news`
+- 制作物: `index.html` の `#works`
+- スキル: `index.html` の `#skills`
+- 略歴、経験: `index.html` の `#background` と `#experience`
+- 連絡先: `index.html` の `#contact` と sidebar の `.side-links`
+- プロフィール画像: `assets/profile-mark.svg`

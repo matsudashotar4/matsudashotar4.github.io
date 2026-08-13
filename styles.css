@@ -80,18 +80,11 @@ a:hover {
 .portrait {
   width: 96px;
   height: 96px;
-  display: grid;
-  place-items: center;
   margin-bottom: 18px;
   border: 1px solid var(--line);
   border-radius: 50%;
-  background:
-    linear-gradient(135deg, rgba(18, 108, 85, 0.18), rgba(255, 255, 255, 0.82)),
-    var(--paper);
-  color: var(--accent);
-  font-family: "Source Serif 4", serif;
-  font-size: 1.6rem;
-  font-weight: 700;
+  background: var(--paper);
+  object-fit: cover;
   box-shadow: var(--shadow);
 }
 
@@ -161,6 +154,23 @@ h3 {
 
 .site-nav a:hover,
 .site-nav a.is-active {
+  color: var(--accent);
+}
+
+.side-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.side-links a {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.side-links a:hover {
   color: var(--accent);
 }
 
@@ -250,6 +260,29 @@ h3 {
   font-size: 0.92rem;
 }
 
+.entry.compact {
+  padding: 16px 0;
+}
+
+.skill-table {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.skill-table > div {
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.skill-table p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .contact-list {
   display: grid;
   gap: 10px;
@@ -312,6 +345,10 @@ h3 {
   .entry {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+
+  .skill-table {
+    grid-template-columns: 1fr;
   }
 
   h1 {
