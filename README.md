@@ -15,9 +15,8 @@
 ## 編集する場所
 
 - 名前、所属、自己紹介: `index.html` の sidebar と `#profile`
-- 更新情報: `index.html` の `#news`
-- 制作物: `index.html` の `#works`
+- 論文: `index.html` の `#publications`
 - スキル: `index.html` の `#skills`
-- 略歴、経験: `index.html` の `#background` と `#experience`
+- 略歴: `index.html` の `#background`
 - 連絡先: `index.html` の `#contact` と sidebar の `.side-links`
 - プロフィール画像: `assets/profile-mark.svg`
